@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+
+        // 逻辑 < > && || ！
+        // 算术 ＋ － ＊ ／ ％ ++ --
+        // 三元
+        		var a = 1;
+        		alert(++a);
+
+
+        		var b = true;
+        		var c = false;
+        		alert (!b);
+        		alert ( b && c);
+        		alert ( b || c);
+
+        		var d = 3;
+        		var e = 4;
+        		alert (d * e);
+				alert (e / d);
+				alert (e % d);
+
+        		var f = 1;
+        		var g = '1';
+        		// 比较值
+        		alert (f == g);
+        		// 比较类型
+        		alert (f === g);
+
+
+
+        		var h = (4 > 2) ? 1 : 2;
+        		alert(h);
+
+        		var i = "50" - 0;
+        		var j = 250;
+        		alert (i + j);
+
+
+        		// if
+
+        		var result = true;
+        		var resultStr = "";
+        		if (result) {
+        			resultStr = "haha";
+        		} else {
+        			resultStr = "hehe";
+        		}
+        		alert(resultStr);
+
+
+        		//do while 无条件执行一次
+        		var k = 5;
+        		do {
+
+        			alert (k);
+        			k--;
+        		} while (k > 0);
+
+
+
+        		// while
+
+        		var l = 15;
+        		while (l >10) {
+        			alert (l);
+        			l--;
+        		}
+
+        		//for
+        		var m = 10;
+        		for (; m > 0;m--) {
+
+        			alert ("for" + m);
+        		}
+
+
+        		//break continue
+        			var n = 10;
+        		for (; n > 0;n--) {
+        			if( n  == 5) 
+        				// break;
+        				continue;
+        			alert ("forfor" + n);
+        		}
+
+
+
+        		//swith
+        		var o = 82;
+        		switch (true) {
+
+        			case o <=90 && o >80:
+        			alert ("swith" + o);
+        			break;
+        			default:
+        					alert ("swith default");
+        			break;
+
+        		}
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
