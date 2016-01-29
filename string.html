@@ -2,7 +2,70 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <script type="text/javascript"></script>
+        <script type="text/javascript">
+
+        	var a = "hello buyi"
+
+        	alert (a.length);
+
+
+        	var b = "23" - 0;
+        	alert (b + 46);
+
+
+        	var c = parseInt ("23");
+        		alert (c + 46);
+
+
+        	var d = parseFloat (23.34);
+			alert (d + 46);
+			// Number 方法也可以转化
+
+			var e = "abc";
+			alert (e.charAt (2));
+
+			var e  = "hello";
+			var f = "buyi";
+			alert (e.concat (f));
+
+			// substr slice
+			var g = "American";
+			alert (g.substring(0,2));
+
+			var h = "volov";
+			alert (h.indexOf ('v'));
+			alert (h.lastIndexOf ('v'));
+
+
+			var i = "  hello ";
+			alert (i);
+			alert (i.trim());
+			alert (i.toLowerCase());
+			alert (i.toUpperCase());
+
+			// 按照字母排序 <0 
+			var j = "apple";
+			var k = "banana";
+			alert (j.localeCompare (k));
+
+			var l = "cat,bat,sat,fat".match ("at");
+			alert (l);
+			alert (l.index);
+			alert (l.input);
+
+
+			var m = "cat,bat,sat,fat".search ("at");
+			alert (m);
+
+			var n = "abb".replace ("a", "b");
+			alert (n);
+
+
+			var o = "a|b|c".split ("|");
+			alert (o[1]);
+
+
+        	</script>
     </head>
     <body>
     </body>
