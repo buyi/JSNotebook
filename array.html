@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+        // var a  = ["a", "b", "c"];
+        var  a = new Array (1);
+        a [0] = "1234";
+        alert (a);
+
+        var b = ["13", a];
+        alert (b [1][0]);
+
+        var c = [];
+        c[999] = "1";
+        alert (c.length);
+
+        var d = ["1" , "2", "3"];
+            alert ("d1" + d);
+        d.length = 0;
+         alert ("d2" + d);
+
+
+         var e = [1,,2];
+         alert ("e1" + e);
+         delete (e[0]);
+               alert ("e2" + e);
+
+
+         var f= ["ceshi"];
+         f.push ("haha");
+         alert(f);
+         // pop  删除数组数据
+
+         var g = [1,2,3,4];
+         alert (g.join());
+         alert (g.join(""));
+         alert (g.join('|'));
+         // 链接 concat
+         // shift 删除第一个元素
+
+
+         var h = [1,2,3,4,5,6,7,8,9,10];
+         var item;
+         while (item = h.shift ()) {
+
+         	alert (item);
+         }
+         alert (h);
+         //  unshift 添加第一个yuansu 
+         // reverse 反向
+         //  slice  切割方式
+         // splice 干掉数组
+         // sort 排序
+
+         var i = [5,6,7,8];
+         // map 有返回值  foreach
+         // reduce reduceRight 从左往右，从右往左，处理两个值
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
