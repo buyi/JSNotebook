@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+
+        var a = {
+        	test : "ceshi",
+        	age :20,
+        	p1 :0,
+        	P2 :0,
+        }
+
+        var b = a.test;
+        alert (b);
+        alert (a.age);
+        //  数组也可以delete
+
+
+        a ["name"] = "i am object";
+        alert (a); 
+        console.log (a);
+        alert (Object.keys(a)); 
+
+        for (i in a) {
+        	console.log (i);
+        }
+
+        // 需要之前定义过 p2 not work becaruse upper
+        with (a) {
+        	p1 = 1;
+        	p2 = 2;
+
+        }
+        console.log (a);
+
+
+        // 主动调用
+        function test (x,y) {
+        	return x +y;
+        }
+
+        alert (test (3,4));
+
+        var fun1 = function (x,y) {
+        		console.log (arguments);
+        		return x +y;
+        };
+        alert (fun1 (5,6));
+
+        //  被动调用
+
+        (function () {
+        	alert (111);
+        })();
+
+        // function legth为参数个数
+
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
