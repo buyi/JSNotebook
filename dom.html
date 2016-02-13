@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+     
+        <style type="text/css">
+        div {
+        	width: 100px;
+        	height:100px;
+        	border-radius:10px;
+        	color:white;
+        	/*line-height: 100px;*/
+        	background-color:yellowgreen;
+        	cursor:pointer;
+        	overflow-y:auto;
+        }
+
+        </style>
+    </head>
+    <body>
+
+<img width = "100px"  src="http://images1.maxthon.cn/avatar/9/087/9087210/1308365362.jpeg"> </image>
+    <div id ="jaja">
+    	哈哈哈
+    </div>
+       <script type="text/javascript">
+        	var a = document.getElementById ("jaja");
+        	console.log (a);
+        	a.innerHTML = "ttt";
+        	a.style.color = "red";
+
+
+        	var b = document.getElementsByTagName("img");
+        	// b[0].src ="http://image.haha.mx/2012/08/04/big/506450_4365b9dc6d27c06197c46e71180c22e9_1344047185.jpg";
+        	b[0].setAttribute ("src", "http://images1.maxthon.cn/avatar/9/087/9087210/1308365362.jpeg");
+
+
+        	var c = document.createElement ("h1");
+        	c.innerHTML = "hahallkdfa\nfda\nfdaDFDFAAAAFDAF";
+        	a.appendChild (c);
+
+        	// insertBefore 一个意思 
+        	// removeChild
+        	// replaceChild
+
+// document.getElementsByTagName ();
+// document.getElementsByClassName ();
+        </script>
+    </body>
+
+
+</html>
