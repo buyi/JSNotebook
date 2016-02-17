@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+
+// 使用new命令时，它后面的函数调用就不是正常的调用，而是被new命令控制了。内部的流程是，先创造一个空对象，作为上下文对象，赋值给函数内部的this关键字。也就是说，this指的是一个新生成的空对象，所有针对this的操作，都会发生在这个空对象上。
+
+// 构造函数之所以叫“构造函数”，就是说这个函数的目的，就是操作上下文对象（即this对象），将其“构造”为需要的样子。如果构造函数的return语句返回的是对象，new命令会返回return语句指定的对象；否则，就会不管return语句，返回构造后的上下文对象。
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
