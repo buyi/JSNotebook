@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>buyi</title> 
+</head>
+<body>
+
+<script>
+
+//string
+var carname1="Volvo XC60";
+var carname2='Volvo XC60';
+var answer1="It's alright";
+var answer2="He is called 'Johnny'";
+var answer3='He is called "Johnny"';
+document.write(carname1 + "<br>")
+document.write(carname2 + "<br>")
+document.write(answer1 + "<br>")
+document.write(answer2 + "<br>")
+document.write(answer3 + "<br>")
+
+//number
+var x1=34.00;
+var x2=34;
+var y=123e5;
+var z=123e-5;
+document.write(x1 + "<br>")
+document.write(x2 + "<br>")
+document.write(y + "<br>")
+document.write(z + "<br>")
+
+
+//boolean
+
+var x=true;
+var y=false;
+document.write(x + "<br>")
+document.write(y + "<br>")
+
+
+//aray
+
+var i;
+var cars = new Array();
+cars[0] = "Saab";
+cars[1] = "Volvo";
+cars[2] = "BMW";
+
+for (i=0;i<cars.length;i++)
+{
+document.write(cars[i] + "<br>");
+}
+
+
+
+//object
+var person=
+{
+	firstname : "John",
+	lastname  : "Doe",
+	id        :  5566
+};
+//点语法 数组语法
+document.write(person.lastname + "<br>");
+document.write(person["lastname"] + "<br>");
+
+
+// null
+//Undefined 不含有值
+var person1;
+var car="Volvo";
+document.write(person1 + "<br>");
+document.write(car + "<br>");
+//null  含有值 为空值
+var car=null
+document.write(car + "<br>");
+</script>
+
+</body>
+</html>
