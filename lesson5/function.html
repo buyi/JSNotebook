@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>	
+<head> 
+<meta charset="utf-8"> 
+<title>buyi</title> 
+</head>
+<body>
+
+<p>点击这个按钮，来调用带参数的函数。</p>
+<p id="demo"></p>
+<button onclick="myFunction('Harry Potter','Wizard')">点击这里</button>
+<script>
+function myFunction(name,job){
+	alert("Welcome " + name + ", the " + job);
+}
+</script>
+
+
+
+<script>
+// 返回值
+function myFunction(a,b){
+	return a*b;
+}
+document.getElementById("demo").innerHTML=myFunction(4,3);
+</script>
+
+
+</body>
+</html>
