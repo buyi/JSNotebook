@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+var index = 0;
+function test () {
+	document.getElementById("demo").innerHTML=Date();
+}
+
+function test1 () {
+	console.log("haha" + index++);
+}
+</script>
+
+<button onclick="test()" onmouseover="test1()">现在的时间是?</button>
+
+</body>
+</html>

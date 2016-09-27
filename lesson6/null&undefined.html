@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+var index = 0;
+function test () {
+	document.getElementById("demo").innerHTML=Date();
+}
+
+function test1 () {
+	console.log("haha" + index++);
+		console.log(typeof undefined );
+			console.log(typeof null );
+				console.log(null === undefined);
+					console.log(null == undefined );
+
+	typeof undefined             // undefined
+typeof null                  // object
+null === undefined           // false
+null == undefined            // true
+}
+</script>
+
+<button onclick="test()" onmouseover="test1()">现在的时间是?</button>
+
+</body>
+</html>
