@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+        var person = new Object();
+        person.name = "tx";
+        person.age = 27;
+        person.job = "engineer";
+
+        person.sayName = function () {
+        		alert (this.name);
+        };
+
+        person.sayName();
+
+ 		// 工厂方法 能避免冗余代码 但不能解决识别问题
+        function createPerson (name, age, job) {
+        	var o = new Object();
+        	o.name=name;
+        	o.age=age;
+        	o.job=job;
+        	o.sayName=function () {
+        		alert (this.name);
+        	};
+        	return o;
+        }
+
+        var p1 = createPerson("tx1",28,"software");
+        var p2 = createPerson("tx2", 29, "sss");
+
+        p1.sayName();
+        p2.sayName();
+
+        // // 构造方法 可以识别特定类型
+        //  function Person (name, age, job) {
+        // 	this.name=name;
+        // 	this.age=age;
+        // 	this.job=job;
+        // 	this.sayName=function () {
+        // 		alert (this.name);
+        // 	};
+        // }
+
+        //      var p11 = new Person("tx3",30,"software");
+        // var p22 = new Person("tx4", 31, "sss");
+
+        // p11.sayName();
+        // p22.sayName();
+
+
+        // 原型方法 避免方法对象重复声明
+        function Person () {
+
+        }
+
+        Person.prototype.name = "hah";
+        Person.prototype.age=44;
+        Person.prototype.job = "dfa";
+        Person.prototype.sayName = function () {
+        	alert (this.name);
+        }
+
+               var p111 = new Person();
+        var p222 = new Person();
+
+        p111.sayName();
+        p222.sayName();
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
